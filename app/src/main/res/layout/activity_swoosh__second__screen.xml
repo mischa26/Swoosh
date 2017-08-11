@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/desired_league_bg"
+    tools:context="mischa.arcillas.com.swoosh.Swoosh_Second_Screen">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swoosh_logo"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="20dp"/>
+
+    <TextView
+        android:id="@+id/scndscreenText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Desired League:"
+        android:textAllCaps="false"
+        android:textSize="20sp"
+        android:layout_below="@+id/imageView"
+        android:textAlignment="center"
+        android:textColor="#FFF"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp" />
+
+    <Button
+        android:background="@drawable/button_border"
+        android:alpha="0.5"
+        android:textColor="#FFFFFF"
+        android:id="@+id/mensBtn"
+        android:onClick="goToMens"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scndscreenText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Mens"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <Button
+        android:background="@drawable/button_border"
+        android:alpha="0.5"
+        android:textColor="#FFFFFF"
+        android:id="@+id/womensBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mensBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Womens"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/coedBtn"
+        android:background="@drawable/button_border"
+        android:alpha="0.5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/womensBtn"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:text="Co-ed"
+        android:textColor="#FFFFFF"
+        android:textAllCaps="false"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/iamTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/coedBtn"
+        android:text="I am a:"
+        android:visibility="gone"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <TextView
+        android:id="@+id/rplyTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/iamTxt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"/>
+
+    <Button
+        android:background="@drawable/button_border"
+        android:alpha="0.5"
+        android:id="@+id/nextBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="next"
+        android:onClick="goToActivity3"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"/>
+</RelativeLayout>

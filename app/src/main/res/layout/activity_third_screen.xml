@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/beginner_baller_bg"
+    tools:context="mischa.arcillas.com.swoosh.ThirdScreen">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:paddingTop="20dp"
+                android:src="@drawable/swoosh_logo" />
+
+            <TextView
+                android:id="@+id/thrdscreenText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/imageView"
+                android:layout_marginTop="39dp"
+                android:text="I am a:"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#FFF"
+                android:textSize="20sp" />
+
+            <Button
+                android:background="@drawable/button_border"
+                android:alpha="0.5"
+                android:textColor="#FFFFFF"
+                android:id="@+id/beginnerBtn"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Beginner"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_below="@+id/thrdscreenText"
+                android:layout_alignLeft="@+id/finishBtn"
+                android:layout_alignStart="@+id/finishBtn"
+                android:layout_marginTop="45dp" />
+
+            <Button
+                android:id="@+id/ballerBtn"
+                android:background="@drawable/button_border"
+                android:alpha="0.5"
+                android:textColor="#FFFFFF"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:text="Baller"
+                android:textSize="20sp"
+                android:textAllCaps="false"
+                android:layout_marginTop="0dp"
+                android:layout_alignTop="@+id/beginnerBtn"
+                android:layout_alignRight="@+id/finishBtn"
+                android:layout_alignEnd="@+id/finishBtn" />
+
+            <Button
+
+                android:background="@drawable/button_border"
+                android:alpha="0.5"
+                android:textColor="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:text="finish"
+                android:onClick="goBackToActivity21"
+                android:textSize="20sp"
+                android:id="@+id/finishBtn" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>
